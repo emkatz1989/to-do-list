@@ -6,6 +6,10 @@ gem 'factory_girl_rails'
   gem 'rspec-rails', '~>3.0.0'
   gem 'shoulda-matchers', require: false
 end
+
+group :production do
+	gem 'rails_12factor', '0.0.2'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
